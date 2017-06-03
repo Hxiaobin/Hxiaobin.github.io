@@ -21,8 +21,8 @@ tags:
 1.hexo new "new post name"
 2.hexo new page "new page name"
 3.hexo clean
-4.hexo g
-5.hexo deploy
+4.hexo generate(hexo g)
+5.hexo deploy(hexo g)
 6.hexo help
 7.hexo version
 8.通过git clone主题到themes下(git clone xxx.git themes/xxx)，修改_config.yml中的theme标签，更换主题
@@ -30,13 +30,13 @@ tags:
 # 使用其他PC更新Blog：
 1.通过分支方式，将原Blog文件夹下的文件提交到远程仓库另一分支：hexo
 2..gitignore文件内容如下
-· .DS_Store
-· Thumbs.db
-· .deploy_git/
-· /node_modules/
-· /public/
+ .DS_Store
+ Thumbs.db
+ .deploy_git/
+ /node_modules/
+ /public/
 3.在其他PC将分支hexo上的文件pull下来
 4.执行以下指令：
-· npm install hexo
-· npm install
-· npm install hexo-deployer-git –save
+ npm install hexo
+ npm install
+ npm install hexo-deployer-git –save
