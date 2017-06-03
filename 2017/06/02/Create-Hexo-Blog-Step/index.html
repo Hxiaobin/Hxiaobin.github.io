@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/02/Create-Hexo-Blog-Step/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="搭建步骤： 安装Git 安装Node.js 安装hexo：sudo npm install -g hexo hexo init hexo generate(hexo g) hexo server(hexo s)–&amp;gt;本地localhost:4000查看是否搭建本地Blog成功 关联git 修改_config.yml 删除themes/landscape下第74-77行（提示主题出错） npm">
-<meta property="og:updated_time" content="2017-06-03T16:31:17.000Z">
+<meta property="og:updated_time" content="2017-06-03T16:32:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Create Hexo Blog Step">
 <meta name="twitter:description" content="搭建步骤： 安装Git 安装Node.js 安装hexo：sudo npm install -g hexo hexo init hexo generate(hexo g) hexo server(hexo s)–&amp;gt;本地localhost:4000查看是否搭建本地Blog成功 关联git 修改_config.yml 删除themes/landscape下第74-77行（提示主题出错） npm">
@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -110,25 +110,38 @@
 </ol>
 <h1 id="使用其他PC更新Blog："><a href="#使用其他PC更新Blog：" class="headerlink" title="使用其他PC更新Blog："></a>使用其他PC更新Blog：</h1><ol>
 <li>通过分支方式，将原Blog文件夹下的文件提交到远程仓库另一分支：hexo</li>
-<li><p>.gitignore文件内容如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">  - .DS_Store</div><div class="line">  - Thumbs.db</div><div class="line">  - .deploy_git/</div><div class="line">  - /node_modules/</div><div class="line">  - /public/</div><div class="line">  ``` </div><div class="line">3. 在其他PC将分支hexo上的文件pull下来</div><div class="line">4. 执行以下指令安装环境：</div></pre></td></tr></table></figure>
+<li>.gitignore文件内容如下<hr>
+<ul>
+<li>.DS_Store</li>
+<li>Thumbs.db</li>
+<li>.deploy_git/</li>
+<li>/node_modules/</li>
+<li>/public/</li>
+</ul>
+<hr>
+</li>
+<li>在其他PC将分支hexo上的文件pull下来</li>
+<li>执行以下指令安装环境：<hr>
 <ul>
 <li>npm install hexo</li>
 <li>npm install</li>
-<li><p>npm install hexo-deployer-git –save</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">5. 执行以下指令发布更新：</div></pre></td></tr></table></figure>
-</li>
-<li><p>hexo clean</p>
-</li>
-<li>hexo g -d<br>```</li>
+<li>npm install hexo-deployer-git –save</li>
 </ul>
+<hr>
+</li>
+<li>执行以下指令发布更新：<hr>
+<ul>
+<li>hexo clean</li>
+<li>hexo g -d</li>
+</ul>
+<hr>
 </li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/02/Create-Hexo-Blog-Step/" data-id="cj3hhx5b50000fnfywfucxq84" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/02/Create-Hexo-Blog-Step/" data-id="cj3hhyhcu0000g2fy1cc4ijqx" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -139,7 +152,7 @@
   
   
     <a href="/2017/06/01/README/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">README</div>
     </a>
   
@@ -172,7 +185,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -197,7 +210,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Hxiaobin_zhi<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
